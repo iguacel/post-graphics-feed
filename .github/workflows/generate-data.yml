@@ -18,6 +18,7 @@ jobs:
 
       - name: Generate Data
         run: node api/index.cjs
+
       - name: Commit files
         run: |
           git config --local user.name actions-user

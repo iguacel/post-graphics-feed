@@ -53,7 +53,7 @@ async function main() {
 	const finalJson = JSON.stringify(allArticles, null, 2);
 
 	// Write the JSON to a file
-	fs.writeFile('wapo_graphics_feed.json', finalJson, 'utf8', (err) => {
+	fs.writeFile('api/wapo_graphics_feed.json', finalJson, 'utf8', (err) => {
 		if (err) {
 			console.error('Error writing file:', err);
 		} else {
