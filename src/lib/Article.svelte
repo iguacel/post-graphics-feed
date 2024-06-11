@@ -1,6 +1,5 @@
 <script>
 	export let data;
-	console.log(data);
 	const authorBaselineURL = 'https://www.washingtonpost.com/people/';
 	// const defIMG = './YX6JDD2TTJF4XPVHIZPHF4SVD4.jpeg';
 
@@ -36,9 +35,11 @@
 						{/if}
 					</span>
 				{/each}
-				<a href={data.credits[data.credits.length - 1].slug}
-					><span>{data.credits[data.credits.length - 1].name}</span></a
-				>
+				<span class="author-item">
+					<a href={data.credits[data.credits.length - 1].slug}
+						><span>{data.credits[data.credits.length - 1].name}</span></a
+					>
+				</span>
 			{:else}
 				{#each data.credits as author}
 					<a href="{authorBaselineURL}{author.slug}"><span>{author.name}</span></a>
@@ -52,12 +53,6 @@
 	.content {
 		padding-top: 2rem;
 		border-top: 1px solid rgb(233, 233, 233);
-	}
-	@media (min-width: 600px) {
-		.content {
-			padding-top: 0;
-			border: none;
-		}
 	}
 
 	.author-item {
@@ -77,7 +72,7 @@
 	.authors {
 		display: flex;
 		flex-wrap: wrap;
-		height: 40px;
+		min-height: 40px;
 		margin-top: 0.25rem;
 	}
 	a:hover + div h1 {
@@ -88,19 +83,19 @@
 	}
 
 	.flexible {
-		flex-grow: 1;
+		flex-grow: 0;
 	}
 
 	.article-data {
-		height: 220px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 	}
 	h1 {
-		font-size: 1.2rem;
-		margin: 0.5rem 0;
-		height: 85px;
+		font-size: 1.5rem;
+		height: auto;
+		margin-top: 2.5rem;
+		margin-bottom: 0.5rem;
 	}
 	.description,
 	.date {
@@ -119,5 +114,33 @@
 	}
 	a {
 		text-decoration: none;
+		display: block;
+	}
+	.content > a {
+		display: flex;
+		background: rgb(235 235 235);
+		align-items: center;
+	}
+	@media (min-width: 600px) {
+		.content {
+			padding-top: 0;
+			border: none;
+		}
+		.flexible {
+			flex-grow: 1;
+		}
+		h1 {
+			height: 85px;
+			margin: 0.5rem 0;
+			font-size: 1.25rem;
+		}
+		.article-data {
+			height: 245px;
+		}
+		.content > a {
+			height: 215px;
+			max-height: 215px;
+			overflow: hidden;
+		}
 	}
 </style>

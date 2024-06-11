@@ -10,21 +10,28 @@
 	});
 </script>
 
-<div>
+<section>
 	{#if articles !== undefined}
 		{#each articles as article}
 			<Article data={article} />
 		{/each}
 	{/if}
-</div>
+</section>
 
 <style>
-	div {
+	section {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, 320px);
+		grid-template-columns: auto;
 		grid-gap: 30px;
 		justify-content: center;
 		grid-auto-flow: dense;
 		row-gap: 25px;
+	}
+
+	@media (min-width: 600px) {
+		section {
+			grid-template-columns: repeat(auto-fill, 320px);
+			row-gap: 35px;
+		}
 	}
 </style>

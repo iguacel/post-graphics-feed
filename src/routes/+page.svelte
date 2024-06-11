@@ -1,5 +1,6 @@
 <script>
 	import List from '$lib/List.svelte';
+	import About from '$lib/About.svelte';
 	import { siteTitle, siteDescription } from '$lib/config';
 </script>
 
@@ -9,6 +10,7 @@
 		<h3>{siteDescription}</h3>
 	</header>
 	<List />
+	<About />
 </main>
 
 <style>
