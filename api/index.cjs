@@ -46,11 +46,15 @@ async function main() {
 		}
 	}
 
+	const uniqueArticles = Array.from(new Set(allArticles.map((article) => article.id))).map((id) =>
+		allArticles.find((article) => article.id === id)
+	);
+
 	// Sort articles by publication date in descending order
-	allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+	uniqueArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 	// Compose the final JSON
-	const finalJson = JSON.stringify(allArticles, null, 2);
+	const finalJson = JSON.stringify(uniqueArticles, null, 2);
 
 	// Write the JSON to a file
 	fs.writeFile('api/wapo_graphics_feed.json', finalJson, 'utf8', (err) => {
