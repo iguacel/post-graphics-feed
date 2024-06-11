@@ -1,5 +1,6 @@
 <script>
 	import Article from '$lib/Article.svelte';
+	import Skeleton from '$lib/Skeleton.svelte';
 	import { onMount } from 'svelte';
 	let articles;
 	onMount(async () => {
@@ -14,6 +15,8 @@
 		{#each articles as article}
 			<Article data={article} />
 		{/each}
+	{:else}
+		<Skeleton />
 	{/if}
 </section>
 
@@ -21,7 +24,7 @@
 	section {
 		display: grid;
 		grid-template-columns: auto;
-		grid-gap: 30px;
+		grid-gap: 40px;
 		justify-content: center;
 		grid-auto-flow: dense;
 		row-gap: 25px;

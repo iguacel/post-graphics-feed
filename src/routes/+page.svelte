@@ -20,12 +20,18 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		position: relative;
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 	}
 	@media (min-width: 830px) {
 		header {
 			width: auto;
 		}
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1.5rem;
 	}
 	h1,
 	h3 {
@@ -35,18 +41,9 @@
 		margin: 0 auto;
 	}
 	h3 {
+		color: black;
 		font-weight: lighter;
-	}
-	main::before {
-		content: '';
-		background-repeat: no-repeat;
-		overflow: visible;
-		width: 250px;
-		height: 100px;
-		position: absolute;
-		right: 0px;
-		top: 0px;
-		z-index: -1;
+		margin-top: 0.25rem;
 	}
 	div {
 		border-top: 1px solid rgb(200, 200, 200);

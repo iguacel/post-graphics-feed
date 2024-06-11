@@ -15,10 +15,11 @@
 	}
 </script>
 
-<!-- <img loading="lazy" decoding="auto" src={data.img} alt={data.description} /> -->
 <div class="content">
 	<a href={data.url}>
-		<img loading="lazy" decoding="auto" src={data.img} alt={data.description} />
+		{#if data.img}
+			<img loading="lazy" decoding="auto" src={data.img} alt={data.description} />
+		{/if}
 	</a>
 	<div class="article-data">
 		<h1 class="">{data.headline}</h1>
@@ -119,7 +120,6 @@
 
 	.date {
 		margin-top: 0.75rem;
-		color: #595959;
 		font-size: 1rem;
 		font-weight: 100;
 	}
@@ -153,8 +153,8 @@
 			height: 245px;
 		}
 		.content > a {
-			height: 215px;
-			max-height: 215px;
+			height: 210px;
+			max-height: 210px;
 			overflow: hidden;
 		}
 	}
