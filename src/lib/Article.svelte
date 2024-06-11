@@ -28,18 +28,33 @@
 			<span>By&nbsp;</span>
 			{#if data.credits.length > 1}
 				{#each data.credits.filter((d, i) => i < data.credits.length - 1) as author, i}
-					<span class="author-item">
-						<a href="{authorBaselineURL}{author.slug}"><span>{author.name}</span></a>
-						{#if i < data.credits.length - 1}
-							<span>,&nbsp;</span>
-						{/if}
-					</span>
+					{#if author.slug}
+						<span class="author-item">
+							<a href="{authorBaselineURL}{author.slug}"><span>{author.name}</span></a>
+							{#if i < data.credits.length - 1}
+								<span>,&nbsp;</span>
+							{/if}
+						</span>
+					{:else}
+						<span class="author-item">
+							<a href=""><span>{author.name}</span></a>
+							{#if i < data.credits.length - 1}
+								<span>,&nbsp;</span>
+							{/if}
+						</span>
+					{/if}
 				{/each}
-				<span class="author-item">
-					<a href={data.credits[data.credits.length - 1].slug}
-						><span>{data.credits[data.credits.length - 1].name}</span></a
-					>
-				</span>
+				{#if data.credits[data.credits.length - 1].slug}
+					<span class="author-item">
+						<a href={data.credits[data.credits.length - 1].slug}
+							><span>{data.credits[data.credits.length - 1].name}</span></a
+						>
+					</span>
+				{:else}
+					<span class="author-item">
+						<a href=""><span>{data.credits[data.credits.length - 1].name}</span></a>
+					</span>
+				{/if}
 			{:else}
 				{#each data.credits as author}
 					<a href="{authorBaselineURL}{author.slug}"><span>{author.name}</span></a>
