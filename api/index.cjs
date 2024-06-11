@@ -17,6 +17,7 @@ async function getAuthorData(url) {
 		const response = await fetch(url).then((res) => res.json());
 		return response.items.map((item) => {
 			return {
+				id: item._id,
 				headline: item.headlines.basic,
 				description: item.description.basic,
 				url: item.canonical_url,
@@ -35,9 +36,10 @@ async function getAuthorData(url) {
 	}
 }
 
-// Main function to get data from all authors and write the resulting JSON to a file
+// Main function to get data from all authors, merge and sort articles by publication date, and write the resulting JSON to a file
 async function main() {
 	let allArticles = [];
+
 	for (const url of urls) {
 		const authorData = await getAuthorData(url);
 
@@ -46,6 +48,7 @@ async function main() {
 		}
 	}
 
+	// Remove duplicates based on the 'id' property
 	const uniqueArticles = Array.from(new Set(allArticles.map((article) => article.id))).map((id) =>
 		allArticles.find((article) => article.id === id)
 	);
@@ -57,11 +60,12 @@ async function main() {
 	const finalJson = JSON.stringify(uniqueArticles, null, 2);
 
 	// Write the JSON to a file
-	fs.writeFile('api/wapo_graphics_feed.json', finalJson, 'utf8', (err) => {
+	const outputFile = 'wapo_graphics_feed.json';
+	fs.writeFile(`api/${outputFile}`, finalJson, 'utf8', (err) => {
 		if (err) {
 			console.error('Error writing file:', err);
 		} else {
-			console.log('File wapo_graphics_feed.json created successfully.');
+			console.log(`File ${outputFile} created successfully.`);
 		}
 	});
 }
