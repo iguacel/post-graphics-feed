@@ -1,38 +1,7 @@
-# create-svelte
+# Washington Post Graphics feed
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+There is no tag or page where you can find all the articles published by The Washington Post's graphics team. To address this, I've manually compiled an array of all the names of the authors who work in that team and used the Post's API to fetch data about their articles, including the headline, subtitle, authors, date, image, and URL.
 
-## Creating a project
+The data is updated daily thanks to a GitHub Actions workflow and the code that fetches and parses the data can be found in the `api` folder of the repository. To avoid overloading the Post's API, only the latest five articles from each author are requested.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project is open source and aims to allow everyone to follow the incredible work published by this outstanding team. If you work here and are not on the list or want to add someone, please open a pull request.
