@@ -23,7 +23,7 @@ async function getAuthorData(url) {
 				url: item.canonical_url,
 				credits: item.credits.by.map((d) => ({ name: d.name, slug: d.slug })),
 				date: item.first_publish_date,
-				img: item.additional_properties.lead_art.additional_properties.originalUrl,
+				img: item.additional_properties.lead_art.additional_properties.thumbnailResizeUrl,
 				label: {
 					text: item.label_display.basic.headline_prefix,
 					url: item.label_display.basic.url

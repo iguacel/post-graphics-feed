@@ -6,7 +6,6 @@
 		articles = await fetch(
 			'https://raw.githubusercontent.com/LuisSevillano/post-graphics-feed/main/api/wapo_graphics_feed.json'
 		).then((res) => res.json());
-		console.log(articles);
 	});
 </script>
 
