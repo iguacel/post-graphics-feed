@@ -45,8 +45,4 @@
 		font-weight: lighter;
 		margin-top: 0.25rem;
 	}
-	div {
-		border-top: 1px solid rgb(200, 200, 200);
-		margin-top: 2rem;
-	}
 </style>

@@ -4,7 +4,7 @@
 
 {#each [...Array(n)].map((u, i) => i) as article}
 	<div class="content">
-		<a href=""> </a>
+		<a> </a>
 		<div class="article-data">
 			<h1 class="">
 				<div class="h1-ske"></div>
@@ -22,12 +22,6 @@
 		border-top: 1px solid rgb(233, 233, 233);
 	}
 
-	.author-item {
-		display: flex;
-	}
-	a span {
-		border-bottom: 1px solid black;
-	}
 	.description {
 		color: rgb(89, 89, 89);
 		margin: 0;
@@ -44,9 +38,6 @@
 	}
 	a:hover + div h1 {
 		color: rgb(80, 80, 80);
-	}
-	a:hover img {
-		transform: scale(1.01);
 	}
 
 	.flexible {
@@ -77,10 +68,6 @@
 		color: #595959;
 		font-size: 1rem;
 		font-weight: 100;
-	}
-	img {
-		transition: all 250ms;
-		width: 100%;
 	}
 	a {
 		text-decoration: none;

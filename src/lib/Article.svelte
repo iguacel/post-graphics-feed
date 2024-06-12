@@ -22,7 +22,7 @@
 		{/if}
 	</a>
 	<div class="article-data">
-		<h1 class="">{data.headline}</h1>
+		<h1>{data.headline}</h1>
 		<p class="flexible description">{data.description}</p>
 		<p class="date">{formatDate(data.date)}</p>
 		<p class="authors">
@@ -38,7 +38,7 @@
 						</span>
 					{:else}
 						<span class="author-item">
-							<a href=""><span>{author.name}</span></a>
+							<a><span>{author.name}</span></a>
 							{#if i < data.credits.length - 1}
 								<span>,&nbsp;</span>
 							{/if}
@@ -53,7 +53,7 @@
 					</span>
 				{:else}
 					<span class="author-item">
-						<a href=""><span>{data.credits[data.credits.length - 1].name}</span></a>
+						<a><span>{data.credits[data.credits.length - 1].name}</span></a>
 					</span>
 				{/if}
 			{:else}
