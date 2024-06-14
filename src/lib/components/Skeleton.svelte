@@ -23,8 +23,7 @@
 		display: block;
 		background: var(--c-img-bg);
 		animation: shine 1.5s linear infinite;
-		height: 210px;
-		max-height: 210px;
+		aspect-ratio: 16 / 9;
 		overflow: hidden;
 	}
 
