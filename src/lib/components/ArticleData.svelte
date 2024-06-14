@@ -21,6 +21,7 @@
 <style>
     .date {
         margin: 0.5em 0 0.5em 0;
+		font-size: 80%;
 	}
 
 	.headline {
@@ -28,18 +29,13 @@
         margin: 0.5em 0 0.5em 0;
 	}
 
-	.article-data {
-		/* Add your styles here */
-	}
 	.description {
-		/* Add your styles here */
+		font-size: 90%;
 	}
 	
 	.authors {
+		font-size: 80%;
 		margin: 1em 0 0 0;
 		opacity: 0.7;
-	}
-	.author-item {
-		/* Add your styles here */
 	}
 </style>
