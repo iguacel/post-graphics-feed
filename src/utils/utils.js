@@ -10,6 +10,7 @@ export function formatDate(dateStr) {
     return date.toLocaleDateString('en-US', options);
 }
 
+
 export function formatAuthors(authors) {
     if (!authors || authors.length === 0) {
         return 'Unknown';
@@ -18,5 +19,10 @@ export function formatAuthors(authors) {
         const author = authors[0];
         return `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile">${author.name}</a>`;
     }
-    return authors.map(author => `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile">${author.name}</a>`).join(', ');
+    if (authors.length === 2) {
+        return authors.map(author => `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile">${author.name}</a>`).join(' and ');
+    }
+    const allButLastAuthors = authors.slice(0, -1).map(author => `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile">${author.name}</a>`).join(', ');
+    const lastAuthor = authors[authors.length - 1];
+    return `${allButLastAuthors} and <a href="${authorBaselineURL}${lastAuthor.slug}" aria-label="Link to author profile">${lastAuthor.name}</a>`;
 }
