@@ -1,0 +1,1 @@
+const s="WP Graphics feed",e="Articles published by The Washington Post's graphics team.",t="https://luissevillano.net/post-graphics-feed/index.html",i="https://luissevillano.net/post-graphics-feed/cover.jpg";export{e as a,t as b,i as c,s};
