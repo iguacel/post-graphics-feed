@@ -2,7 +2,7 @@
 
 :root {
 	--sans: "Tiny5", sans-serif;
-	--c-bg: red;
+	--c-bg: rgb(9, 255, 0);
 	--c-fg: white;
 }
 *, *::before, *::after{

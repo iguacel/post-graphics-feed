@@ -8,7 +8,7 @@ const config = {
     kit: {
         adapter: adapter(),
 		paths: {
-            base: process.env.NODE_ENV === 'production' ? '/post-graphics-feed' : '',
+            base: process.env.NODE_ENV === 'production' ? 'post-graphics-feed' : '',
         }
     }
 };

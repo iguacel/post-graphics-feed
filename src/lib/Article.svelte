@@ -64,7 +64,6 @@
 	.authors {
 		display: flex;
 		flex-wrap: wrap;
-		min-height: 40px;
 		margin-top: 0.25rem;
 	}
 	a:hover + .article-data h1 {
@@ -119,7 +118,6 @@
 			height: 245px;
 		}
 		.content > a {
-			height: 210px;
 			max-height: 210px;
 			overflow: hidden;
 		}

@@ -38,7 +38,6 @@
 		grid-gap: 1em;
 		justify-content: center;
 		grid-auto-flow: dense;
-		padding: 1em;
 	}
 
 	@media (min-width: 600px) {
