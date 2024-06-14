@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate Data
-        run: node api/index.cjs
+        run: node api/index.js
 
       - name: Commit files
         run: |

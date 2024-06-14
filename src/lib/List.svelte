@@ -2,38 +2,60 @@
 	import Article from '$lib/Article.svelte';
 	import Skeleton from '$lib/Skeleton.svelte';
 	import { onMount } from 'svelte';
+
 	let articles;
+	let loading = true;
+
 	onMount(async () => {
-		articles = await fetch(
-			'https://raw.githubusercontent.com/LuisSevillano/post-graphics-feed/main/api/wapo_graphics_feed.json'
-		).then((res) => res.json());
+		try {
+			articles = await fetch(
+				'https://raw.githubusercontent.com/iguacel/post-graphics-feed/main/api/wapo_graphics_feed.json'
+			).then((res) => res.json());
+		} catch (error) {
+			console.error('Failed to fetch articles:', error);
+		} finally {
+			loading = false;
+		}
 	});
 </script>
 
 <section>
-	{#if articles !== undefined}
+	{#if loading}
+		<Skeleton />
+	{:else if articles && articles.length > 0}
 		{#each articles as article}
 			<Article data={article} />
 		{/each}
 	{:else}
-		<Skeleton />
+		<p>No articles available</p>
 	{/if}
 </section>
 
 <style>
 	section {
 		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 40px;
+		grid-template-columns: 1fr;
+		grid-gap: 1em;
 		justify-content: center;
 		grid-auto-flow: dense;
-		row-gap: 25px;
+		padding: 1em;
 	}
 
 	@media (min-width: 600px) {
 		section {
-			grid-template-columns: repeat(auto-fill, 320px);
-			row-gap: 35px;
+			grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		}
+	}
+
+	@media (min-width: 900px) {
+		section {
+			grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		}
+	}
+
+	@media (min-width: 1200px) {
+		section {
+			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 		}
 	}
 </style>
