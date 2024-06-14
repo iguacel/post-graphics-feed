@@ -12,18 +12,19 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin: 1rem 0 3rem 0;
+		margin: 0 0 4rem 0;
 	}
 
 	h1 {
 		font-size: 2.5rem;
-		margin: 1rem 0 3rem 0;
 		opacity: 0.8;
+		font-weight: 500;
 	}
 
 	p {
+		margin-top: 2rem;
 		font-size: 1rem;
 		font-weight: 300;
-		max-width: 220px;
+		max-width: 310px;
 	}
 </style>

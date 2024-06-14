@@ -23,11 +23,8 @@
 
 <style>
 	footer {
-		margin: 4rem 0 4rem 0;
+		margin: 4rem 0 0 0;
 		opacity: 0.8;
-	}
-	h2 {
-		margin-bottom: 2rem;
 	}
 
 	@media only screen and (min-width: 600px) {
