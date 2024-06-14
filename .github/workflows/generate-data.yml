@@ -2,7 +2,7 @@ name: Generate API Data
 
 on:
   schedule:
-    - cron: '0 6,18 * * *'
+    - cron: '0 6,18 * * *'  # Run at 6 AM and 6 PM UTC
   push:
     branches:
       - main
@@ -15,18 +15,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Use the version of Node.js you need
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Generate Data
         run: node api/index.js
 
       - name: Commit files
         run: |
-          git config --local user.name actions-user
+          git config --local user.name "actions-user"
           git config --local user.email "actions@github.com"
-          git add '*'
+          git add api/wapo_graphics_feed.json
           if [[ `git status --porcelain` ]]; then
             echo "OK: Changes detected."
-            git commit -am "gh-action get wapo data: $(date)"
+            git commit -m "gh-action get wapo data: $(date -u)"
             git push origin main
           else
-          echo "No changes were detected."
+            echo "No changes were detected."
           fi
