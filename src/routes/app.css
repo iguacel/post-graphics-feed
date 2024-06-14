@@ -4,7 +4,7 @@
 	--sans: "Tiny5", sans-serif;
 	--c-bg: black;
 	--c-fg: white;
-	--c-img-bg: #e6e6e6;
+	--c-img-bg: #1c1c1c;
 }
 *, *::before, *::after{
     box-sizing: border-box; 
