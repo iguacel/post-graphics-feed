@@ -8,7 +8,7 @@
 
         <p class="date">{formatDate(data.date)}</p>
 		<h3 class="headline">{data.headline}</h3>
-		<p class="description">{data.description}</p>
+		<!-- <p class="description">{data.description}</p> -->
 	</a>
 
 	{#if data.credits && data.credits.length > 0}
@@ -21,17 +21,19 @@
 <style>
     .date {
         margin: 0.5em 0 0.5em 0;
-		font-size: 80%;
+		font-size: 70%;
+		text-transform: uppercase;
 	}
 
 	.headline {
-		font-size: 1.5rem;
+		font-size: 1.1rem;
         margin: 0.5em 0 0.5em 0;
+		font-weight: 600;
 	}
 
-	.description {
+	/* .description {
 		font-size: 90%;
-	}
+	} */
 	
 	.authors {
 		font-size: 80%;

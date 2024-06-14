@@ -23,9 +23,17 @@
 
 <style>
 	footer {
-		margin-top: 4rem;
+		margin: 4rem 0 4rem 0;
+		opacity: 0.8;
 	}
 	h2 {
-		margin-bottom: 0.25rem;
+		margin-bottom: 2rem;
+	}
+
+	@media only screen and (min-width: 600px) {
+		footer {
+			column-count: 2;
+			column-gap: 2em;
+		}
 	}
 </style>

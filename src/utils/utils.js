@@ -17,12 +17,12 @@ export function formatAuthors(authors) {
     }
     if (authors.length === 1) {
         const author = authors[0];
-        return `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`;
+        return `<a class="author" href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`;
     }
     if (authors.length === 2) {
-        return authors.map(author => `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`).join(' and ');
+        return authors.map(author => `<a class="author" href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`).join(' and ');
     }
-    const allButLastAuthors = authors.slice(0, -1).map(author => `<a href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`).join(', ');
+    const allButLastAuthors = authors.slice(0, -1).map(author => `<a class="author" href="${authorBaselineURL}${author.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${author.name}</a>`).join(', ');
     const lastAuthor = authors[authors.length - 1];
-    return `${allButLastAuthors} and <a href="${authorBaselineURL}${lastAuthor.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${lastAuthor.name}</a>`;
+    return `${allButLastAuthors} and <a class="author" href="${authorBaselineURL}${lastAuthor.slug}" aria-label="Link to author profile" target="_blank" rel="noopener noreferrer">${lastAuthor.name}</a>`;
 }

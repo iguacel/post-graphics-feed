@@ -17,7 +17,8 @@
 
 	h1 {
 		font-size: 2.5rem;
-		margin-bottom: 0.5rem;
+		margin: 1rem 0 3rem 0;
+		opacity: 0.8;
 	}
 
 	p {

@@ -15,7 +15,19 @@
 		margin: 0 auto;
 		color: var(--c-fg);
 		padding: 1em;
-		max-width: 1200px;
+		max-width: 1600px;
+	}
+
+	@media (min-width: 800px) {
+		main {
+			padding: 2em;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		main {
+			padding: 4em;
+		}
 	}
 
 </style>
