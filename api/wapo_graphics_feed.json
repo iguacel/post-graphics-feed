@@ -1,5 +1,26 @@
 [
   {
+    "id": "4GXR2WL76BF3HFLW3GDJ4TARUE",
+    "headline": "How every senator voted on the Right to IVF Act",
+    "description": "See how your senator voted on the Right to IVF Act.",
+    "url": "https://www.washingtonpost.com/politics/interactive/2024/06/13/senate-vote-right-to-ivf-bill/",
+    "credits": [
+      {
+        "name": "Szu Yu  Chen",
+        "slug": "szuyu-chen"
+      },
+      {
+        "name": "Adrián Blanco",
+        "slug": "adrian-blanco"
+      }
+    ],
+    "date": "2024-06-13T19:26:00.013Z",
+    "img": "https://www.washingtonpost.com/resizer/gKTuCi5hkE3PYI7WXlJZ5r1i_8U=/300x0/arc-anglerfish-washpost-prod-washpost/public/YT7HKDPWVNAMXN6ZMWXHQ7GBPU.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/politics/"
+    }
+  },
+  {
     "id": "30e9a352-5839-476f-87e3-13805ec3a3db",
     "headline": "The media's role in fracturing sports",
     "description": "As societal grievance divides sports fans, will media members meet this moment or get trampled by it?",
@@ -869,7 +890,7 @@
       }
     ],
     "date": "2024-05-14T21:33:44.548Z",
-    "img": "https://www.washingtonpost.com/resizer/5QlaBBx1U0zc1XIfO7sOtu6EIZw=/300x0/arc-anglerfish-washpost-prod-washpost/public/QEO3Z5Z3BL4M6PX5KGCVLLVYGY.jpg",
+    "img": "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/QEO3Z5Z3BL4M6PX5KGCVLLVYGY.jpg",
     "label": {
       "url": "https://www.washingtonpost.com/lifestyle/"
     }
