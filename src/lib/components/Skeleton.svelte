@@ -17,13 +17,11 @@
 <style>
 	.content {
 		padding-top: 2rem;
-		border-top: 1px solid #e9e9e9;
 	}
 
 	.content > a {
 		display: block;
-		background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-		background-size: 200% 100%;
+		background: var(--c-img-bg);
 		animation: shine 1.5s linear infinite;
 		height: 210px;
 		max-height: 210px;
@@ -40,7 +38,7 @@
 	.description,
 	.date,
 	.authors {
-		background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+		background: var(--c-img-bg);
 		background-size: 200% 100%;
 		animation: shine 1.5s linear infinite;
 		margin: 0;
