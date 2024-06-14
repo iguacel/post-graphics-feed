@@ -24,5 +24,16 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		opacity: 0;
+		animation: fadeIn 2s forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 </style>
