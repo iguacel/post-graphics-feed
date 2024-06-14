@@ -1,6 +1,6 @@
 <script>
-	import List from '$lib/List.svelte';
-	import About from '$lib/About.svelte';
+	import List from '$lib/components/List.svelte';
+	import About from '$lib/components/About.svelte';
 	import Header from '$lib/components/Header.svelte';
 </script>
 

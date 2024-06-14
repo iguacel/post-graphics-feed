@@ -1,6 +1,6 @@
 <script>
-	import Article from '$lib/Article.svelte';
-	import Skeleton from '$lib/Skeleton.svelte';
+	import Article from '$lib/components/Article.svelte';
+	import Skeleton from '$lib/components/Skeleton.svelte';
 	import { onMount } from 'svelte';
 
 	let articles;
