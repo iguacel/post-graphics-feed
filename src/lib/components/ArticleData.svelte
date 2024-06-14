@@ -4,7 +4,7 @@
 </script>
 
 <div class="article-data">
-	<a href={data.url} aria-label="Link to article">
+	<a href={data.url} aria-label="Link to article" target="_blank" rel="noopener noreferrer">
 
         <p class="date">{formatDate(data.date)}</p>
 		<h3 class="headline">{data.headline}</h3>

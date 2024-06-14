@@ -6,7 +6,7 @@
 </script>
 
 <div class="content">
-	<a href={data.url} aria-label="Link to article">
+	<a href={data.url} aria-label="Link to article" target="_blank" rel="noopener noreferrer">
 		<Img src={data?.img} alt={data?.description} />
 	</a>
 
