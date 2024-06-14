@@ -36,7 +36,10 @@
 		justify-content: flex-end;
 	}
 
-	h1, .description, .date, .authors {
+	h1,
+	.description,
+	.date,
+	.authors {
 		background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
 		background-size: 200% 100%;
 		animation: shine 1.5s linear infinite;

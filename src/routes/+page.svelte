@@ -1,48 +1,21 @@
 <script>
 	import List from '$lib/List.svelte';
 	import About from '$lib/About.svelte';
-	import { siteTitle, siteDescription } from '$lib/config';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <main>
-	<header>
-		<h1>{siteTitle}</h1>
-		<h3>{siteDescription}</h3>
-	</header>
+	<Header/>
 	<List />
 	<About />
 </main>
 
 <style>
-	header {
-		padding: 1rem 0;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		position: relative;
-		margin-bottom: 3rem;
-	}
-	@media (min-width: 830px) {
-		header {
-			width: auto;
-		}
-	}
-	h1 {
-		font-size: 2.5rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-	}
-	h1,
-	h3 {
-		display: block;
-		width: 100%;
-		max-width: 50rem;
+	main {
 		margin: 0 auto;
+		color: var(--c-fg);
+		padding: 1em;
+		max-width: 1200px;
 	}
-	h3 {
-		color: black;
-		font-weight: lighter;
-		margin-top: 0.25rem;
-	}
+
 </style>

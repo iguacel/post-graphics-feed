@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <footer>
 	<h2>About this project</h2>
 	<p>
@@ -26,7 +23,6 @@
 
 <style>
 	footer {
-		border-top: 1px solid rgb(200, 200, 200);
 		margin-top: 4rem;
 	}
 	h2 {
