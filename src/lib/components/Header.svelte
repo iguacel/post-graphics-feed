@@ -16,9 +16,9 @@
 	}
 
 	h1 {
+		font-family: 'Tiny5', serif;
 		font-size: 2.5rem;
 		opacity: 0.8;
-		font-weight: 500;
 	}
 
 	p {
