@@ -1,5 +1,30 @@
 [
   {
+    "id": "A7T6X6CW35A6HNIJJFMPUVUV6I",
+    "headline": "How Biden could be replaced as his party’s nominee, in 4 scenarios",
+    "description": "It’s not too late for Democrats to replace their nominee, but it gets more complex closer to Election Day.",
+    "url": "https://www.washingtonpost.com/politics/2024/06/28/replace-democratic-presidential-nominee/",
+    "credits": [
+      {
+        "name": "Hannah Dormido",
+        "slug": "hannah-dormido"
+      },
+      {
+        "name": "Kevin Uhrmacher",
+        "slug": "kevin-uhrmacher"
+      },
+      {
+        "name": "Sarah Frostenson",
+        "slug": "sarah-frostenson"
+      }
+    ],
+    "date": "2024-06-28T18:07:48.996Z",
+    "img": "https://www.washingtonpost.com/resizer/wbylJOO0QHgvgkgdzntFLpYPHtA=/300x0/arc-anglerfish-washpost-prod-washpost/public/LAG6NH3VTZGCDPKE3VLYEPP4H4.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/politics/"
+    }
+  },
+  {
     "id": "G4FVKYYEYZG4ROMLPW46HLSG3A",
     "headline": "The most religious, and religiously diverse, places in America",
     "description": "This week, we mine the U.S. Religious Census, a decennial count of America’s faithful, for insights into the geography of religious devotion. We also compare people’s claims on church attendance to their actual behavior.",
@@ -6948,6 +6973,39 @@
     "img": "https://www.washingtonpost.com/resizer/Hixgs4aj-UcQ-3O4ziUgcD4oiQU=/300x0/arc-anglerfish-washpost-prod-washpost/public/5WO5OFSLG5CKRGN4NPFWYO7QEM.jpg",
     "label": {
       "url": "https://www.washingtonpost.com/elections/"
+    }
+  },
+  {
+    "id": "7NC274QGLRBFHEAIDJBD2Z6BKU",
+    "headline": "The number of students who have experienced gun violence at school since Columbine",
+    "description": "The Washington Post for years has tracked the number of students affected by school shootings. Since 1999, over 300,000 children have experienced gun violence during school hours.",
+    "url": "https://www.washingtonpost.com/education/interactive/school-shootings-database/",
+    "credits": [
+      {
+        "name": "John Woodrow Cox",
+        "slug": "john-woodrow-cox"
+      },
+      {
+        "name": "Steven Rich",
+        "slug": "steven-rich"
+      },
+      {
+        "name": "Lucas Trevor",
+        "slug": "lucas-trevor"
+      },
+      {
+        "name": "John Muyskens",
+        "slug": "john-muyskens"
+      },
+      {
+        "name": "Monica Ulmanu",
+        "slug": "monica-ulmanu"
+      }
+    ],
+    "date": "2023-02-13T18:10:36.541Z",
+    "img": "https://www.washingtonpost.com/resizer/Ixb0g9gAm6hMzMiGaqy4usUHtwU=/300x0/arc-anglerfish-washpost-prod-washpost/public/V3F7MRHCCRHIPBYON5MIOOMK2Y.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/education/"
     }
   },
   {
