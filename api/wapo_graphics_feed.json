@@ -1,5 +1,22 @@
 [
   {
+    "id": "GVP5NUWVK5EOVA2CNC6KCCCWR4",
+    "headline": "How many days will you need air conditioning where you live?",
+    "description": "Type your city to see how the number of days demanding AC has changed in your city since the 1980s and how it’s forecasted to grow by 2060.",
+    "url": "https://www.washingtonpost.com/weather/interactive/2024/how-many-days-year-will-you-need-air-conditioning-where-you-live/",
+    "credits": [
+      {
+        "name": "Szu Yu  Chen",
+        "slug": "szuyu-chen"
+      }
+    ],
+    "date": "2024-07-10T19:30:47.525Z",
+    "img": "https://www.washingtonpost.com/resizer/Egc2ojRFinzu6FjYVTws3MxyS4c=/300x0/arc-anglerfish-washpost-prod-washpost/public/ND6XIJUF6JHRPJ7UL3KYEA52UQ.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/weather/extreme-weather/"
+    }
+  },
+  {
     "id": "HUOCG6I37FGJRDKSNMBENVK7HQ",
     "headline": "What we know — and don’t know — about Hezbollah’s weapons arsenal",
     "description": "The Lebanese militant group has guided and unguided rockets, antitank artillery, ballistic and antiship missiles, as well as drones equipped with explosives.",
