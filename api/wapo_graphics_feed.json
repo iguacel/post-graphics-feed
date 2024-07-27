@@ -1,5 +1,70 @@
 [
   {
+    "id": "4VYY6M2H5VGDVMXT2KYWZMK6HY",
+    "headline": "The view from Paris: Drenched but joyful at the Opening Ceremonies",
+    "description": "A daily visual guide through the lens of an Olympics newbie sent to Paris by The Washington Post. The Opening Ceremonies",
+    "url": "https://www.washingtonpost.com/sports/olympics/2024/07/27/daily-olympics-visual-guide-paris-opening-ceremonies/",
+    "credits": [
+      {
+        "name": "Artur Galocha",
+        "slug": "artur-galocha"
+      },
+      {
+        "name": "Bonnie Berkowitz",
+        "slug": "bonnie-berkowitz"
+      },
+      {
+        "name": "Álvaro Valiño",
+        "slug": ""
+      }
+    ],
+    "date": "2024-07-27T15:39:49.074Z",
+    "img": "https://www.washingtonpost.com/resizer/eekQENMmG37dTW3_RLj1CxKsyqw=/300x0/arc-anglerfish-washpost-prod-washpost/public/OAJECXJU7ZFLHHZJJWZVKERGMM.jpg",
+    "label": {}
+  },
+  {
+    "id": "L3MIMT5FCZBLRL4WUPTB2CU7RA",
+    "headline": "How many athletes are in the Paris Olympics, and other key numbers",
+    "description": "The Paris Olympic Games will see about 11,040 athletes take part in 32 sports including athletics, basketball and rowing. Here are the numbers you need to know. ",
+    "url": "https://www.washingtonpost.com/sports/olympics/2024/07/27/paris-olympic-games-2024-how-many/",
+    "credits": [
+      {
+        "name": "Adela Suliman",
+        "slug": "adela-suliman"
+      },
+      {
+        "name": "Samuel Granados",
+        "slug": "samuel-granados"
+      }
+    ],
+    "date": "2024-07-27T13:19:24.067Z",
+    "img": "https://www.washingtonpost.com/resizer/ZfpaNvciZpNTo3U8XmubgOpdGMM=/300x0/arc-anglerfish-washpost-prod-washpost/public/EH2FXX72UJ6OS2TODCSGS6UUP4.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/sports/olympics/"
+    }
+  },
+  {
+    "id": "YJ3XGQ5AXVHPJH2UNFP2O5YCGE",
+    "headline": "Pennsylvania presidential election results could again take days to count",
+    "description": "Republicans in the state Senate refused to change the law and allow mail-in votes to be counted ahead of Election Day, despite widespread calls for change. ",
+    "url": "https://www.washingtonpost.com/politics/2024/07/27/pennsylvania-election-results-mail-ballots/",
+    "credits": [
+      {
+        "name": "Colby Itkowitz",
+        "slug": "colby-itkowitz"
+      },
+      {
+        "name": "Derek Hawkins",
+        "slug": "derek-hawkins"
+      }
+    ],
+    "date": "2024-07-27T10:00:44.975Z",
+    "img": "https://www.washingtonpost.com/resizer/rfo93VOca69K6OS_Zp_sZoA4SSg=/300x0/arc-anglerfish-washpost-prod-washpost/public/ZSYVBUA5PUI6ZKM2L7VCWLNDJM.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/politics/democracy-in-america/"
+    }
+  },
+  {
     "id": "H6UEVGVNQVB7PETQJZTI55QLLA",
     "headline": "A bullet — or bullet fragment — hit Trump during assassination attempt, FBI says",
     "description": "“What struck former President Trump in the ear was a bullet, whether whole or fragmented into smaller pieces, fired from the deceased subject’s rifle,” the FBI said in a statement Friday.",
