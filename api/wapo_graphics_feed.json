@@ -1,5 +1,47 @@
 [
   {
+    "id": "TSPY2HRFEREVLO3EJCD4S6YEYE",
+    "headline": "How every senator voted on the stopgap bill to avert a government shutdown",
+    "description": "The Senate approved the funding measure on Wednesday 78 to 18. See how your senators voted.",
+    "url": "https://www.washingtonpost.com/politics/interactive/2024/09/25/senate-vote-results-government-shutdown-bill-cr/",
+    "credits": [
+      {
+        "name": "Adrián Blanco",
+        "slug": "adrian-blanco"
+      },
+      {
+        "name": "Chris Alcantara",
+        "slug": "chris-alcantara"
+      }
+    ],
+    "date": "2024-09-25T22:45:54.212Z",
+    "img": "https://www.washingtonpost.com/resizer/JuQ5B9fWMhVQQOa0EwvSNIPYgpY=/300x0/arc-anglerfish-washpost-prod-washpost/public/EU4LQCYM7VBA7LTNJQQQ4NJZCA.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/politics/"
+    }
+  },
+  {
+    "id": "U7MOTZ6JRNCQZIGRBIKXW3UJFE",
+    "headline": "How every House member voted on a bill to avert a government shutdown",
+    "description": "The bill, which required two-thirds support, passed 341 to 82. See how your lawmaker voted.",
+    "url": "https://www.washingtonpost.com/politics/interactive/2024/09/25/house-vote-results-government-shutdown-bill-cr/",
+    "credits": [
+      {
+        "name": "Adrián Blanco",
+        "slug": "adrian-blanco"
+      },
+      {
+        "name": "Chris Alcantara",
+        "slug": "chris-alcantara"
+      }
+    ],
+    "date": "2024-09-25T22:00:03.676Z",
+    "img": "https://www.washingtonpost.com/resizer/je8s6nqjnz7c1rHIxdEvexhDH4w=/300x0/arc-anglerfish-washpost-prod-washpost/public/5PPJQE5N3RGF5PEJQIDIVL5RCA.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/politics/"
+    }
+  },
+  {
     "id": "ZA5RXLQOVJDYNCQDLPDIK5PRNE",
     "headline": "NFL playoff projections: Updated win totals, Super Bowl odds for every team",
     "description": "Our power ratings predict each team’s chance of making the playoffs, winning the division and becoming Super Bowl champions.",
@@ -8829,6 +8871,31 @@
     "img": "https://www.washingtonpost.com/resizer/Rl0h02zmZ5IAQk_XqyedytmwRPA=/300x0/arc-anglerfish-washpost-prod-washpost/public/YWBRRLZCDSRMHEQOBBERKDPIUQ.jpg",
     "label": {
       "url": "https://www.washingtonpost.com/economy/"
+    }
+  },
+  {
+    "id": "XS633MXYJFDVJMNIT6T4ZEARUY",
+    "headline": "The 5 hurricane categories, explained",
+    "description": "See the potential damage associated with each category part of the Saffir-Simpson Hurricane Wind Scale.",
+    "url": "https://www.washingtonpost.com/weather/interactive/2023/hurricane-categories-scale-explained/",
+    "credits": [
+      {
+        "name": "Amudalat Ajasa",
+        "slug": "amudalat-ajasa"
+      },
+      {
+        "name": "Aaron Steckelberg",
+        "slug": "aaron-steckelberg"
+      },
+      {
+        "name": "Julie Hoban",
+        "slug": "julie-vitkovskaya"
+      }
+    ],
+    "date": "2023-09-13T22:00:13.389Z",
+    "img": "https://www.washingtonpost.com/resizer/Ur_kBaB4hG54hEqVSiA8ffM90BY=/300x0/arc-anglerfish-washpost-prod-washpost/public/QGSVP5P565HOTGIKQULYJY32PM.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/weather/"
     }
   },
   {
