@@ -1,5 +1,83 @@
 [
   {
+    "id": "2NSYSQEB2RELLEE3UEHEFHOG5E",
+    "headline": "Crypto cash is flooding the 2024 election. Here’s who’s benefiting.",
+    "description": "Super PACs funded by the cryptocurrency industry have spent more than $130 million in one of the largest — and least obvious — efforts to influence the 2024 race.",
+    "url": "https://www.washingtonpost.com/business/interactive/2024/crypto-firms-candidates-house-senate-election-2024/",
+    "credits": [
+      {
+        "name": "Tony Romm",
+        "slug": "tony-romm"
+      },
+      {
+        "name": "Eric Lau",
+        "slug": "eric-lau"
+      },
+      {
+        "name": "Adriana Navarro",
+        "slug": "adriana-navarro"
+      },
+      {
+        "name": "Kevin Schaul",
+        "slug": "kevin-schaul"
+      }
+    ],
+    "date": "2024-10-18T10:05:59.836Z",
+    "img": "https://www.washingtonpost.com/resizer/blpS4nbICQsuwsEOFnMtpmBQqkE=/300x0/arc-anglerfish-washpost-prod-washpost/public/U6XGDIFFAZE3HHZVHRN73GE73U.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/economic-policy/"
+    }
+  },
+  {
+    "id": "HWTCSIKOU5H5DIJVPOOXQ3VHQU",
+    "headline": "The U.S.-Mexico border, the wall and the thousands of acres between them",
+    "description": "Documents show the completion of the wall in the lower Rio Grande Valley would leave an area five times the size of Manhattan on the wrong side of the divide.",
+    "url": "https://www.washingtonpost.com/immigration/interactive/2024/border-wall-mexico-texas-land/",
+    "credits": [
+      {
+        "name": "Nick Miroff",
+        "slug": "nick-miroff"
+      },
+      {
+        "name": "Kirsten Luce"
+      },
+      {
+        "name": "Laris Karklis",
+        "slug": "laris-karklis"
+      },
+      {
+        "name": "Frank Hulley-Jones",
+        "slug": "frank-hulley-jones"
+      }
+    ],
+    "date": "2024-10-18T10:00:24.816Z",
+    "img": "https://www.washingtonpost.com/resizer/KjJcVsaYhCTHAt31SCo5wja1BAw=/300x0/arc-anglerfish-washpost-prod-washpost/public/SDJCTMBUKH2RF62MRNTMZ5FR7Q.JPG",
+    "label": {
+      "url": "https://www.washingtonpost.com/local/immigration/"
+    }
+  },
+  {
+    "id": "KU6TT4HGMRCIFDKYWD4YBRKS3Y",
+    "headline": "The districts that will determine control of the House",
+    "description": "Control of the U.S. House looks like a coin flip with Democrats and Republicans fighting over about 40 districts out of 435.",
+    "url": "https://www.washingtonpost.com/elections/interactive/2024/us-house-races-to-watch/",
+    "credits": [
+      {
+        "name": "Hannah Recht",
+        "slug": "hannah-recht"
+      },
+      {
+        "name": "Adrián Blanco",
+        "slug": "adrian-blanco"
+      }
+    ],
+    "date": "2024-10-18T09:00:42.982Z",
+    "img": "https://www.washingtonpost.com/resizer/1gBkkLtQVm-sBvEXb_gBQpmygFI=/300x0/arc-anglerfish-washpost-prod-washpost/public/YBS6Q3LMRRGIPF2AYU5SDBMOBI.jpg",
+    "label": {
+      "url": "https://www.washingtonpost.com/elections/"
+    }
+  },
+  {
     "id": "UZWVIP3AGNFS3CHJSFBBMPJYRE",
     "headline": "How people cast their vote in each state, and how it’s changing",
     "description": "States have adopted policies that allow for ballots to be cast by mail, at early voting sites or that maintain a preference for voting in person on Election Day.",
