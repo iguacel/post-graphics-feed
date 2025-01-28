@@ -4,7 +4,7 @@
 
 <header>
 	<h1>{siteTitle}</h1>
-	<p>A <s>curated</s> list of recent articles published by The Washington Post's graphics team.</p>
+	<p><a href="https://github.com/iguacel/post-graphics-feed" target="_blank" rel="noopener noreferrer">Github repo</a></p> 
 </header>
 
 <style>
@@ -26,5 +26,10 @@
 		font-size: 1rem;
 		font-weight: 300;
 		max-width: 310px;
+	}
+
+	a {
+		font-weight: 200;
+		opacity: 0.5;
 	}
 </style>
