@@ -13,29 +13,30 @@ const urls = authors.map(({ slug }) =>
 	)
 );
 
-// Function to fetch author data from a URL
+// function to fetch author data from a URL
 async function getAuthorData(url) {
 	try {
-		const response = await fetch(url);
-		if (!response.ok) throw new Error(`Failed to fetch data from ${url}`);
-		const data = await response.json();
-		return data.items.map((item) => ({
-			id: item._id,
-			headline: item.headlines.basic,
-			description: item.description.basic,
-			url: item.canonical_url,
-			credits: item.credits.by.map((d) => ({ name: d.name, slug: d.slug })),
-			date: item.first_publish_date,
-			img: item.additional_properties.lead_art?.additional_properties?.thumbnailResizeUrl ||
-				item.additional_properties.lead_art?.additional_properties?.originalUrl ||
-				item.additional_properties.lead_art?.url,
-			label: {
-				text: item.label_display?.basic?.headline_prefix,
-				url: item.label_display?.basic?.url
-			}
-		}));
+		const response = await fetch(url).then((res) => res.json());
+		return response.items.map((item) => {
+			return {
+				id: item._id,
+				headline: item.headlines.basic,
+				description: item.description.basic,
+				url: item.canonical_url,
+				credits: item.credits.by.map((d) => ({ name: d.name, slug: d.slug })),
+				date: item.first_publish_date,
+				img:
+					item.additional_properties.lead_art?.additional_properties?.thumbnailResizeUrl ||
+					item.additional_properties.lead_art?.additional_properties?.originalUrl ||
+					item.additional_properties.lead_art?.url,
+				label: {
+					text: item.label_display?.basic?.headline_prefix,
+					url: item.label_display?.basic?.url
+				}
+			};
+		});
 	} catch (error) {
-		console.error(`Error fetching author data from ${url}:`, error);
+		console.error(`\n* Error fetching author data from ${url}. Error:\n\n`, error);
 		return [];
 	}
 }
@@ -53,40 +54,43 @@ function readExistingJson(filePath) {
 	return [];
 }
 
-// Function to remove duplicates based on the 'id' property and sort by date
-function removeDuplicatesAndSort(articles) {
-	const uniqueArticles = Array.from(new Set(articles.map((article) => article.id)))
-		.map((id) => articles.find((article) => article.id === id));
-	return uniqueArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
-}
+// Main function to get data from all authors, merge and sort articles by publication date, and write the resulting JSON to a file
+async function main() {
+	const existingArticles = readExistingJson(outputFile);
+	let allArticles = [...existingArticles];
 
-// Function to write JSON to file if there are new articles
-function writeJsonToFile(filePath, data, existingDataLength) {
-	if (data.length > existingDataLength) {
-		fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8', (err) => {
+	for (const url of urls) {
+		const authorData = await getAuthorData(url);
+
+		if (authorData.length > 0) {
+			allArticles = allArticles.concat(authorData);
+		}
+	}
+
+	// Remove duplicates based on the 'id' property
+	const uniqueArticles = Array.from(new Set(allArticles.map((article) => article.id))).map((id) =>
+		allArticles.find((article) => article.id === id)
+	);
+
+	// Sort articles by publication date in descending order
+	uniqueArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+	// Compose the final JSON
+	const finalJson = JSON.stringify(uniqueArticles, null, 2);
+
+	// Write the JSON to a file only if new articles were added
+	if (uniqueArticles.length > existingArticles.length) {
+		const outputFile = outputFile;
+		fs.writeFile(outputFile, finalJson, 'utf8', (err) => {
 			if (err) {
 				console.error('Error writing file:', err);
 			} else {
-				console.log(`File ${filePath} created successfully.`);
+				console.log(`File ${outputFile} created successfully.`);
 			}
 		});
 	} else {
 		console.log('No new articles to update.');
 	}
-}
-
-// Main function to get data from all authors, merge and sort articles, and write the resulting JSON to a file
-async function main() {
-	const existingArticles = readExistingJson(outputFile);
-	let allArticles = [...existingArticles];
-
-	const authorDataPromises = urls.map(getAuthorData);
-	const authorDataArrays = await Promise.all(authorDataPromises);
-	allArticles = allArticles.concat(...authorDataArrays);
-
-	const uniqueArticles = removeDuplicatesAndSort(allArticles);
-
-	writeJsonToFile(outputFile, uniqueArticles, existingArticles.length);
 }
 
 // Execute the main function

@@ -4,7 +4,15 @@
 
 <header>
 	<h1>{siteTitle}</h1>
-	<p><a href="https://github.com/iguacel/post-graphics-feed" target="_blank" rel="noopener noreferrer">Github repo</a></p> 
+	<p class="description">{siteDescription}</p>
+
+	<p class="repo">
+		<a
+			href="https://github.com/iguacel/post-graphics-feed"
+			target="_blank"
+			rel="noopener noreferrer">Github repo</a
+		>
+	</p>
 </header>
 
 <style>
@@ -25,11 +33,20 @@
 		margin-top: 2rem;
 		font-size: 1rem;
 		font-weight: 300;
+	}
+
+	.description {
 		max-width: 310px;
 	}
 
 	a {
 		font-weight: 200;
 		opacity: 0.5;
+	}
+
+	.repo {
+		text-align: right;
+		width: 100%;
+		max-width: none;
 	}
 </style>
